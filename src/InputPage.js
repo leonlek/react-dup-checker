@@ -24,7 +24,7 @@ class InputPage extends React.Component {
 
         e.preventDefault()
 
-        const out = (this.state.input).toLowerCase().replace(";", ",").split(",").map((item) => {
+        const out = (this.state.input).toLowerCase().replace(/;/gi, ",").split(",").map((item) => {
             return item.trim()
         })
         this.setState({ output: out })
