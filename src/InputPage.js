@@ -38,9 +38,7 @@ class InputPage extends React.Component {
         for (i = 0; i < arr.length; i++) {
             result += arr[i]+", "
         }
-
         this.setState({ outputArr: result })
-
     }
 
     render() {
